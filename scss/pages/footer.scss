@@ -1,0 +1,47 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #000;
+  color: #fff;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 32px;
+    @include mq('tablet') {
+      flex-direction: row;
+    }
+  }
+  &-left {
+    img {
+      margin-bottom: 24px;
+    }
+    a {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 24px;
+      margin-right: 24px;
+      margin-bottom: 12px;
+    }
+  }
+  &-rights {
+    color: $color-gray;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 24px;
+  }
+  &-right {
+    &-badges {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: flex-start;
+      &-title {
+        font-weight: 500;
+        color: $color-gray;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}

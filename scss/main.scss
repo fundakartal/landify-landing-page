@@ -1,0 +1,10 @@
+@import 'config/variables';
+@import 'config/mixin';
+//
+@import 'helper/global';
+@import 'helper/formalize.scss';
+@import 'helper/normalize.scss';
+//
+@import 'pages/header.scss';
+@import 'pages/index';
+@import 'pages/footer';

@@ -1,0 +1,49 @@
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &-logo {
+    margin-right: 32px;
+  }
+  &-navigation {
+    display: none;
+    @include mq('desktop') {
+      display: block;
+    }
+    &-item {
+      padding: 4px 8px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+  }
+  &-badges {
+    display: none;
+    @include mq('tablet') {
+      display: flex;
+      column-gap: 13px;
+      position: absolute;
+      right: 56px;
+    }
+    @include mq('desktop') {
+        right: 0;
+    }
+  }
+  .menu-icon {
+    position: absolute;
+    right: 0;
+    @include mq('desktop') {
+      display: none;
+    }
+  }
+}
